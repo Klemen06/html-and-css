@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+      <meta charset="UTF-8">
+      <title>
+          HTML in CSS
+      </title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+
+
+  </head>
+
+  <body style="background-color: white;">
+
+
+
+      <div id="navbar">
+          <a class="active" href="index.html">DOMOV</a>
+          
+          <div class="dropdown">
+            <button class="dropbtn">HTML &#9662;
+              
+            </button>
+            <div class="dropdown-content">
+              <a href="HTML_uvod.html">Kaj je HTML?</a>
+              <a href="Berners-lee.html">Tim Berners-Lee</a>
+              <a href="zgo_HTML.html">Zgodovina</a>
+              <a href="oblika_strani.html">Oblika strani</a>
+              <a href="Urejevalniki.html">Urejevalniki</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">CSS &#9662;
+            </button>
+          <div class="dropdown-content">
+              <a href="CSS_uvod.html">Kaj je CSS?</a>
+              <a href="verzije_CSS.html">Verzije</a>
+              <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+              <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+              <a href="Primeri_CSS.html">Primeri</a>
+              <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+            <a class="nav-element" href="VIRI.html">
+              VIRI
+            </a>
+      </div>  
+      
+  <div class="first_page">
+    <div class="ozadje">
+    <img  style="width:100%;" src="ozadje.png">
+      <div align="center" class="heading">
+        <b>HTML in CSS</b>
+      </div>
+    </div>
+    <div class="page-content">
+      <h1 align=center>
+        HTML in CSS
+      </h1>
+        <br>
+        <br>
+      
+      <p>
+      HTML se uporablja za izdelavo spletnih strani in dokumentov. Z njim lahko napišemo vsebino dokumenta, s CSS-jem pa oblikujemo njegov videz.
+      </p>
+        <br>
+
+      <p>HTML je leta 1991 izumil britanski računalničar Tim Berners-Lee, ki je poleg tega jezika ustvaril tudi svetovni splet.<br>
+        Od takrat se je zvrstilo precej različnih verzij, ki so prinašale nove zmožnosti in funkcije, trenutno pa je v uporabi verzija HTML5.<br>
+        V osnovi je to označevalni jezik (ni programski, saj z njim ne moremo napisati programa).
+      </p>
+
+        <br>
+
+      <p>CSS je izšel leta 1996. Izumila sta ga Håkon Wium Lie in Bert Bos.<br>
+         Namenjen je oblikovanju stila posameznih elementov v HTML. Poznamo več različnih verzij. Najnovejša od njih je CSS 3, ker pa je še v fazi razvoja, je zaenkrat v uporabi verzija CSS 2.1. <br>
+         Ta jezik ima zelo veliko funkcij, s katerimi lahko urejamo videz dokumenta. Kodo CSS lahko v kodo HTML vnašamo na več različnih načinov.
+      </p>
+      
+        
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    
+    </div>
+  </div>
+  
+  <div class="page-footer">
+      Klemen Skok, R 1. A
+      <br><br>
+                 Šolsko leto 2021/22
+  </div>
+          
+  </body>
+</html>

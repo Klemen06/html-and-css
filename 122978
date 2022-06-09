@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+      <title>
+          HTML in CSS
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style1.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
+    </head>
+
+    <body>
+
+      <div id="navbar">
+        <a class="active" href="index.html">DOMOV</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">HTML &#9662;
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="HTML_uvod.html">Kaj je HTML?</a>
+            <a href="Berners-lee.html">Tim Berners-Lee</a>
+            <a href="zgo_HTML.html">Zgodovina</a>
+            <a href="oblika_strani.html">Oblika strani</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">CSS &#9662;
+          </button>
+        <div class="dropdown-content">
+            <a href="CSS_uvod.html">Kaj je CSS?</a>
+            <a href="verzije_CSS.html">Verzije</a>
+            <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+            <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+            <a href="Primeri_CSS.html">Primeri</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+        </div>
+      </div>
+          <a class="nav-element" href="VIRI.html">
+            VIRI
+          </a>
+    </div>  
+              
+              <div class="page-background">
+                <div class="page-content">
+                    
+                    <h1 align=center>
+                        Oblikovne lastnosti CSS
+                      </h1>
+
+                    <br>
+                    <br>
+                    
+                      <p>
+                          V CSS poznamo zelo veliko oblikovnih lastnosti. Tu je nekaj najbolj pogostih.
+                      </p>
+                      <br>
+
+                      <h3>PISAVA</h3>
+                        <ul>
+                           <li><code class="code-text">font-family</code> (pisava)</li>
+                           <li><code class="code-text">font-size</code> (velikost pisave)</li>
+                           <li><code class="code-text">font-weight</code> (krepkost pisave)</li>
+                           <li><code class="code-text">font-variant</code> (male/velike črke)</li>
+                        </ul>
+                        <br>
+                        <h3>BESEDILO</h3>
+                        <ul>
+                            <li><code class="code-text">text-decoration </code>(okraski na besedilu)</li>
+                            <li><code class="code-text">text-align </code>(Poravnava besedila)</li>
+                            <li><code class="code-text">vertical-align</code> (navpična poravnava)</li>
+                            <li><code class="code-text">letter-spacing </code> (razmik med znaki)</li>
+                         </ul>
+                         <br>
+                         <h3>BARVA IN OZADJE</h3>
+                        <ul>
+                            <li><code class="code-text">color</code> (barva besedila)</li>
+                            <li><code class="code-text">background-color </code>(barva ozadja)</li>
+                            <li><code class="code-text">background-image </code>(slika v ozadju)</li>
+                         </ul>
+                         <br>
+                         <h3>SEZNAMI</h3>
+                         <ul>
+                            <li><code class="code-text">list-style-type </code>(način oštevilčevanja)</li>
+                        </ul>
+                          <br>
+                         <h3>POLOŽAJ IN VELIKOST (SLIKE)</h3>
+                         <ul>
+                            <li><code class="code-text">display </code>(vrsta elementa)</li>
+                            <li><code class="code-text">position</code>(položaj elementa)</li>
+                            <li><code class="code-text">left/right/top/bottom </code>(položaj levega/desnega/zgornjega/spodnjega roba)</li>
+                            <li><code class="code-text">width</code>(širina elementa)</li>
+                            <li><code class="code-text">height</code>(višina elementa)</li>
+                         </ul>
+                          <br>
+                         <h3>ODMIKI</h3>
+                         <ul>
+                            <li><code class="code-text">padding-left</code> (levi notranji odmik)</li>
+                            <li><code class="code-text">padding-right </code>(desni notranji odmik)</li>
+                            <li><code class="code-text">padding-top </code>(zgornji notranji odmik)</li>
+                            <li><code class="code-text">padding-bottom </code>(spodnji notranji odmik)</li>
+                         </ul>
+
+                    <br><br><br>
+                    
+
+                    <br><br><br><br><br><br><br><br><br><br><br>
+
+                    <div class="page-bottom">
+                            <a href="CSS_v_HTML.html">&#9669; Nazaj</a>
+                            <a style="float:right" href="Primeri_CSS.html">Naprej &#9659;</a>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="page-footer">
+                 Klemen Skok, R 1. A
+                 <br><br>
+                 Šolsko leto 2021/22
+              </div>
+
+
+    </body>
+
+</html>

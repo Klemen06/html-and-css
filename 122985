@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+      <meta charset="UTF-8">
+      <title>
+          HTML in CSS
+      </title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+
+
+  </head>
+
+  <body>
+
+
+
+      <div id="navbar">
+          <a class="active" href="index.html">DOMOV</a>
+          
+          <div class="dropdown">
+            <button class="dropbtn">HTML &#9662;
+              
+            </button>
+            <div class="dropdown-content">
+              <a href="HTML_uvod.html">Kaj je HTML?</a>
+              <a href="Berners-lee.html">Tim Berners-Lee</a>
+              <a href="zgo_HTML.html">Zgodovina</a>
+              <a href="oblika_strani.html">Oblika strani</a>
+              <a href="Urejevalniki.html">Urejevalniki</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">CSS &#9662;
+            </button>
+          <div class="dropdown-content">
+              <a href="CSS_uvod.html">Kaj je CSS?</a>
+              <a href="verzije_CSS.html">Verzije</a>
+              <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+              <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+              <a href="Primeri_CSS.html">Primeri</a>
+              <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+            <a class="nav-element" href="VIRI.html">
+              VIRI
+            </a>
+      </div>  
+      
+  <div class="page-background">
+    <div class="page-content">
+      <h1 align=center>
+        VIRI
+      </h1>
+        <br>
+        <br>
+      <ul class="viri">
+          <li>W3.org: Tim Berners-Lee. Dostopno prek: <a href="https://www.w3.org/People/Berners-Lee/ ">https://www.w3.org/People/Berners-Lee/</a></li>
+          <li>NSA-splet: Sestava HTML dokumenta. Dostopno prek: <a href="https://nsa-splet.si/html/uvod/html-uvod-01.php">https://nsa-splet.si/html/uvod/html-uvod-01.php</a></li>
+          <li>W3Schools.com: W3C HTML tutorial. Dostopno prek: <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/ </a></li>
+          <li>Andrej Mrvar: Osnove HTML: <a href="http://mrvar.fdv.unilj.si/sola-/VIS2/html/htmlslo.htm">http://mrvar.fdv.unilj.si/sola-/VIS2/html/htmlslo.htm</a></li>
+          <li>NSA-splet: osnove CSS. Dostopno prek: <a href="https://nsa-splet.si/css/uvod/css-uvod-01.php">https://nsa-splet.si/css/uvod/css-uvod-01.php</a></li>
+          <li>Matjaž Zaveršnik: Oblikovne lastnosti CSS. Dostopno prek: <a href="http://zaversnik.fmf.uni-lj.si-/Gradiva/CSS/seznam/skupine.php">http://zaversnik.fmf.uni-lj.si-/Gradiva/CSS/seznam/skupine.php</a></li>
+      </ul>
+      
+        <br>
+        <br>
+
+      Datum zadnjega dostopa do zgornjih povezav: <u>1. 6. 2022</u>
+
+      <br><br><br><br><br><br><br>
+
+
+    
+    </div>
+  </div>
+  
+  <div class="page-footer">
+      Klemen Skok, R 1. A
+      <br><br>
+                 Šolsko leto 2021/22
+  </div>
+          
+  </body>
+</html>

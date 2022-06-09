@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+      <title>
+          HTML in CSS
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
+    </head>
+
+    <body>
+
+      <div id="navbar">
+        <a class="active" href="index.html">DOMOV</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">HTML &#9662;
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="HTML_uvod.html">Kaj je HTML?</a>
+            <a href="Berners-lee.html">Tim Berners-Lee</a>
+            <a href="zgo_HTML.html">Zgodovina</a>
+            <a href="oblika_strani.html">Oblika strani</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">CSS &#9662;
+          </button>
+        <div class="dropdown-content">
+            <a href="CSS_uvod.html">Kaj je CSS?</a>
+            <a href="verzije_CSS.html">Verzije</a>
+            <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+            <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+            <a href="Primeri_CSS.html">Primeri</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+        </div>
+      </div>
+          <a class="nav-element" href="VIRI.html">
+            VIRI
+          </a>
+    </div>  
+              
+              <div class="page-background">
+                <div class="page-content">
+                    
+                    <h1 align=center>
+                        Kaj je HTML?
+                      </h1>
+                        <br>
+                        <br>
+
+                    <p>
+                        HTML je kratica za Hyper Text Markup Language. Je označevalni jezik, ki se uporablja za izdelavo spletnih strani in pisanje dokumentov.<br>
+                         Je osnova vseh spletnih strani. Je zaporedje ukazov, ki računalniku povejo, kako naj se prikaže željena stran.</p>
+                    <p>
+                        Skupaj s tem jezikom se uporablja jezik CSS, s katerim urejamo videz dokumenta.<br>
+                        Jezik HTML je leta 1991 izumil Tim Berners-Lee v Švici.
+                    </p>
+
+                    <br><br><br><br><br>
+                    <figure>
+                        <img style="width:20%; margin-left:50px" alt="HTML5 logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png">
+                        <figcaption style="margin-left:125px">HTML5 logo</figcaption>
+                    </figure>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+
+                    <div class="page-bottom">
+                            <a style="float:right" href="Berners-lee.html">Naprej &#9659;</a>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="page-footer">
+                 Klemen Skok, R 1. A
+                 <br><br>
+                 Šolsko leto 2021/22
+              </div>
+
+
+    </body>
+
+</html>
+

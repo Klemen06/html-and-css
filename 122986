@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+      <title>
+          HTML in CSS
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
+    </head>
+
+    <body>
+
+      <div id="navbar">
+        <a class="active" href="index.html">DOMOV</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">HTML &#9662;
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="HTML_uvod.html">Kaj je HTML?</a>
+            <a href="Berners-lee.html">Tim Berners-Lee</a>
+            <a href="zgo_HTML.html">Zgodovina</a>
+            <a href="oblika_strani.html">Oblika strani</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">CSS &#9662;
+          </button>
+        <div class="dropdown-content">
+            <a href="CSS_uvod.html">Kaj je CSS?</a>
+            <a href="verzije_CSS.html">Verzije</a>
+            <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+            <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+            <a href="Primeri_CSS.html">Primeri</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+        </div>
+      </div>
+          <a class="nav-element" href="VIRI.html">
+            VIRI
+          </a>
+    </div>  
+              
+              <div class="page-background">
+                <div class="page-content">
+                    
+                    <h1 align=center>
+                        Zgodovina HTML
+                      </h1>
+
+                    <br>
+                    <br>
+
+                    <p>
+                      HTML je od svoje iznajdbe pa vse do danes doživel veliko sprememb in nadgradenj. V prvih petih letih  (1990-1995) je bil HTML večkrat spremenjen <br>
+                      in razširjen, predvsem v CERN-u in nato v IETF (Delovna skupina za internetni inženiring (ang. Internet Engineering Task Force)). 
+                    </p>
+
+                    <p>
+                      Razvoj HTML-ja se je ponovno spremenil z ustanovitvijo sveta W3C (World Wide Web Consortium). Verzija HTML 3.0 je znana kot prvi neuspeli <br>
+                      poskus razširitve HTML. Tej je kmalu sledila izboljšana verzija HTML 3.2, ki je bila dokončana leta 1997. Istega leta je izšel tudi HTML4.
+                    </p>
+
+                    <p>
+                      Naslednje leto so se pri W3C odločili, da bodo prenehali razvijati HTML, namesto tega pa naj bi začeli delati na enakovrednem jeziku XML, <br>
+                      ki se je imenoval XHTML. Začeli so s preoblikovanjem HTML4 v XML, ki je bil potem znan kot XHTML 1.0. Bil je končan leta 2000, <br>
+                      poleg nove serializacije pa ni dodal nobenih novih funkcij . Po različici XHTML 1.0 je začel W3C pripravljati nov jezik, ki ni bil združljiv <br>
+                      s prejšnjima jezikoma HTML in XHTML, in ga poimenoval XHTML 2. Po tem se je razvoj HTML počasi ustavil. 
+                    </p>
+
+                    <p>
+                      Leta 2003 je bila objavljena tehnologija Xforms, ki je bila predstavljena kot naslednja generacija spletnih obrazcev. <br>
+                      To je ponovno spodbudilo zanimanje za razvoj samega HTML in ne zgolj iskanje nadomestkov zanj. To zanimanje je bilo posledica spoznanja,<br>
+                      da je bila uporaba XML kot spletne tehnologije omejena na povsem nove tehnologije, ne pa na zamenjavo obstoječih uporabljenih tehnologij (kot je HTML).
+                    </p>
+                    <p>
+                      Prvi rezultat tega zanimanja je bil dokaz koncepta, ki je pokazal, da je mogoče obrazce HTML4 razširiti tako, da zagotavljajo številne funkcije, <br>
+                      ki jih je uvedel XForms 1.0, ne da bi bilo treba v brskalnikih uvesti mehanizme za upodabljanje, ki niso združljivi z obstoječimi spletnimi stranmi HTML. <br>
+                      V tej zgodnji fazi, ko je bil osnutek že javno dostopen in so bili prispevki že pridobljeni iz vseh virov, je bila specifikacija le pod <br>
+                      avtorskimi pravicami podjetja Opera Software.
+                    </p>
+                    <p>
+                      Kmalu je prišla zamisel, da bi bilo treba ponovno odpreti razvoj HTML. Na delavnici W3C leta 2004 sta Podjetji Mozilla in Opera predstavili <br>
+                      nekatera načela, na katerih bi temeljil HTML5. predlog je bil zavrnjen, ker je bil v nasprotju s predhodno izbrano smerjo razvoja spleta. <br>
+                      Osebje in članstvo W3C sta glasovala za nadaljevanje razvoja nadomestkov, ki temeljijo na XML.
+                    </p>
+                    <p>
+                      Kmalu zatem so Apple, Mozzila in Opera skupaj objavili, da nameravajo nadaljevati delo na področju HTML5 pod okriljem nove skupine WHATWG. <br>
+                      Delovna skupina WHATWG je temeljila na več temeljnih načelih, zlasti na tem, da morajo biti tehnologije združljive za nazaj, <br>
+                      da se morajo specifikacije in izvedbe ujemati, tudi, če to pomeni spreminjanje specifikacij in ne izvedb, ter da morajo biti specifikacije<br>
+                      dovolj podrobne, da lahko izvedbe dosežejo popolno interoperabilnost brez medsebojnega povratnega inženiringa.
+                    </p>
+                    <p>
+                      Zgornja načela so zahtevala, da specifikacija HTML5 vključuje tisto, kar je bilo prej opredeljeno v treh ločenih dokumentih: HTML4, XHTML1 in DOM2 HTML. <br>
+                      To je pomenilo vključitev bistveno več podrobnosti kot prej. Leta 2006 je W3C pokazal zanimanje za sodelovanje pri razvoju HTML5 in leta 2007 <br>
+                      ustanovil delovno skupino, ki je bila zadolžena za sodelovanje z WHATWG pri razvoju specifikacije HTML5. Apple in Opera so W3C dovolili objavo <br>
+                      specifikacije z avtorskimi pravicami W3C, medtem ko so na spletnem mestu WHATWG ohranili različico z manj omejevalno licenco.
+                    </p>
+                    <p>
+                      WHATWG in W3C sta nato več let sodelovali. Leta 2011 pa sta skupini prišli do zaključka, da imata različne cilje. W3C je želel objaviti "dokončano" <br>
+                      različico HTML5, WHATWG pa je želela nadaljevati delo na živem standardu za HTML, stalno vzdrževati specifikacijo in je ne zamrzniti v stanju z <br>
+                      znanimi težavami in po potrebi dodajati nove funkcije za razvoj platforme.
+                    </p>
+                    <p>
+                      Leta 2019 sta delovni skupini WHATWG in W3C podpisali sporazum o sodelovanju pri pripravi enotne različice HTML v prihodnje. To verzijo uporabljamo še danes. 
+                    </p>
+                    
+                    <br><br><br><br><br><br><br>
+
+                    <div class="page-bottom">
+                            <a href="Berners-lee.html">&#9669; Nazaj</a>
+                            <a style="float:right" href="oblika_strani.html">Naprej &#9659;</a>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="page-footer">
+                 Klemen Skok, R 1. A
+                 <br><br>
+                 Šolsko leto 2021/22
+              </div>
+
+
+    </body>
+
+</html>
+

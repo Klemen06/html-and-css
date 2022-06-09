@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+      <title>
+          HTML in CSS
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style1.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
+    </head>
+
+    <body>
+
+      <div id="navbar">
+        <a class="active" href="index.html">DOMOV</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">HTML &#9662;
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="HTML_uvod.html">Kaj je HTML?</a>
+            <a href="Berners-lee.html">Tim Berners-Lee</a>
+            <a href="zgo_HTML.html">Zgodovina</a>
+            <a href="oblika_strani.html">Oblika strani</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">CSS &#9662;
+          </button>
+        <div class="dropdown-content">
+            <a href="CSS_uvod.html">Kaj je CSS?</a>
+            <a href="verzije_CSS.html">Verzije</a>
+            <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+            <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+            <a href="Primeri_CSS.html">Primeri</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+        </div>
+      </div>
+          <a class="nav-element" href="VIRI.html">
+            VIRI
+          </a>
+    </div>  
+              
+              <div class="page-background">
+                <div class="page-content">
+                    
+                    <h1 align=center>
+                        Verzije CSS
+                      </h1>
+
+                    <br>
+                    <br>
+                    <h2>CSS 1</h2>
+
+                    <p>
+                      Norvežan Håkon Wium Lie je leta 1994 organizaciji W3C predstavil svoj predlog pravil, ki so se imenovala Cascading HTML Style Sheets. <br>
+                      Z njimi naj bi lahko urejal obliko elementov HTML in določal izgled dokumenta. Njegov predlog je sprejel Bert Bos, ki je prav tako <br>
+                      delal na podobnih stilskih podlogah, imenovanih Stream-Based Style Sheet Proposal. Začela sta sodelovati. Izdala sta tako imenovani <br>
+                      Cascading Style Sheets. Prvič sta predstavila predlog novembra 1994 in drugič oktobra 1995. Decembra 1996 je izšel CSS level 1 (oz. CSS 1). <br>
+                      Omogočal je nastavitve pisave, robov, barve, odmikov, ozadja, itd.
+                    </p>
+
+                    <h2>CSS 2</h2>
+                    
+                    <p>
+                      Dve leti po izidu CSS 1 so pri W3C objavili priporočila za CSS 2, ki pa je dejansko izšel maja 1998. Poleg zmožnosti CSS 1 je omogočal <br>
+                      še absolutno postavitev elementov, prelome strani, različne vrste številčenja, itd.
+                    </p>
+
+                    <h2>CSS 2.1</h2>
+
+                    <p>
+                      Ker se je izkazalo, da CSS 2 potrebuje še precej popravkov, so leta 2002 začeli razvijati dopolnitev CSS 2.1, ki pa je <br>
+                      izšla junija 2011 pod imenom CSS 2.1 Revison.
+                    </p>
+
+                    <h2>CSS 3</h2>
+
+                    <p>
+                      Razvoj CSS 3 se je začel že leta 1999, ko so bili narejeni prvi usnutki. Za razliko od prejšnjih priporočil se CSS 3 deli na module, <br>
+                      ki nadgrajujejo CSS 2 in uporabljajo specifikacijo CSS 2.1. Vsak narejen modul doda in/ali zamenja del CSS 2.1. <br>
+                      Ko je modul zaključen, je dodan v obstoječ sistem CSS 2.1, poleg vseh že končanih modulov.
+
+                    </p>
+                    <br><br>
+
+                    Trenutno poteka razvoj več kot štirideset različnih modulov, do sedaj pa jih je zaključenih pet:
+                    <br>
+                    <ul>
+
+                      <li>CSS color Level 3 (barve)</li>
+                      <li>CSS Namespaces module Level 3 (imenski prostori)</li>
+                      <li>Selectors Level 3 (selektorji)</li>
+                      <li>Media Queries (podpora medijem)</li>
+                      <li>CSS Style Attributes (atributi slogov)</li>
+
+                    </ul>
+                    <br>
+                    Trenutno je v uporabi CSS 2.1, ker je CSS 3 še v razvoju.
+
+
+
+
+                    <br><br><br><br><br><br><br>
+
+                    <div class="page-bottom">
+                            <a href="CSS_uvod.html">&#9669; Nazaj</a>
+                            <a style="float:right" href="CSS_v_HTML.html">Naprej &#9659;</a>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="page-footer">
+                 Klemen Skok, R 1. A
+                 <br><br>
+                 Šolsko leto 2021/22
+              </div>
+
+
+    </body>
+
+</html>
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+      <title>
+          HTML in CSS
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
+    </head>
+
+    <body>
+
+      <div id="navbar">
+        <a class="active" href="index.html">DOMOV</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">HTML &#9662;
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="HTML_uvod.html">Kaj je HTML?</a>
+            <a href="Berners-lee.html">Tim Berners-Lee</a>
+            <a href="zgo_HTML.html">Zgodovina</a>
+            <a href="oblika_strani.html">Oblika strani</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">CSS &#9662;
+          </button>
+        <div class="dropdown-content">
+            <a href="CSS_uvod.html">Kaj je CSS?</a>
+            <a href="verzije_CSS.html">Verzije</a>
+            <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+            <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+            <a href="Primeri_CSS.html">Primeri</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+        </div>
+      </div>
+          <a class="nav-element" href="VIRI.html">
+            VIRI
+          </a>
+    </div>  
+              
+              <div class="page-background">
+                <div class="page-content">
+                    
+                    <h1 align=center>
+                        Oblika HTML strani
+                      </h1>
+
+                      <br>
+                      <br>
+
+                        <div class="container">
+
+                        <br>
+                          <div style="text-align:center;"><b>Vsebina strani</b></div>
+                        <br>
+
+                        <ul>
+
+                          <li><a href="#sestava_HTML">Sestava HTML dokumenta</a></li>
+                          <li><a href="#splosna_oblika">Splošna oblika HTML strani</a></li>
+                          <li><a href="#znacke">Značke</a></li>
+                          
+                          <ul>
+
+                            <li><a href="#head">Head</a></li>
+                            <li><a href="#naslovi">Naslovi</a></li>
+                            <li><a href="#p_in_br">Odstavki in nove vrstice</a></li>
+                            <li><a href="#seznami">Seznami</a></li>
+                            <li><a href="#tabele">Tabele</a></li>
+                            <li><a href="#ostal_znacke">Ostale značke</a></li>
+
+                          </ul>
+                        </ul>
+
+                        </div>
+
+
+
+                      <br>
+                      <br>
+                    
+                    <h2 id="sestava_HTML">Sestava HTML dokumenta</h2>
+                    
+                      <br>
+                      <br>
+                    
+                    <p>
+                      Dokument HTML je sestavljen iz elementov. Ti elementi so značke, ki so zapisane v lomljenih oklepajih. Običajno so zapisane v parih. <br>
+                      Na primer: <code class="code-text">&lt;body&gt;</code> (začetna značka) in <code class="code-text">&lt;/body&gt;</code> (končna značka). Končna značka vedno vsebuje tudi poševnico (/), saj ravno to pove, <br>
+                      da je to končna značka (npr. <code class="code-text">&lt;/body&gt;</code>). Med začetno in končno značko pišemo želeno besedilo. 
+                    </p>
+                      <br>
+                      Primer:
+                      <br>
+                      <pre class="example1">
+                        <code>
+    &lt;body&gt;
+
+          Sem pišemo besedilo             
+    
+    &lt;/body&gt;
+                        </code>
+                      </pre>
+                    
+                      <br>  
+                      <br>
+
+                    <p>
+                      Poznamo tudi samostojne značke, ki ne potrebujejo končne značke (npr. <code class="code-text">&lt;br&gt;</code>) in značke, 
+                      ki se same zapirajo (ang. Self-closing tags), npr. <code class="code-text">&lt;img /&gt;</code>. <br>
+                      To pomeni, da ne potrebujejo končne značke.
+                    </p>
+
+                      <br>
+                      <br>
+                    
+                    <h2 id="splosna_oblika">Splošna oblika HTML strani</h2>
+                    
+                      <br>
+                      <br>
+                    
+                      <pre class="example1">
+                        <code>
+  &lt;!DOCTYPE html>
+  
+    &lt;html>
+
+      &lt;head>
+        &lt;title>Naslov, ki se pojavi v okviru okna&lt;/title>      
+      &lt;/head>
+    
+      &lt;body>
+        Vsebina strani
+      &lt;/body>
+
+    &lt;/html>
+                        </code>
+                      </pre>
+                    
+                      <br>
+                      <br>
+                    
+                    <ul>
+                      <li>Dokumenti HTML se vedno začnejo z deklaracijo <code class="code-text">&lt;!DOCTYPE html&gt;</code>, ki pove, da je dokument napisan v jeziku HTML.</li>
+                      <li>Po tej deklaraciji napišemo značko <code class="code-text">&lt;html&gt;</code>, ki pomeni začetek tega dokumenta.</li>
+                      <li>Nato napišemo značko <code class="code-text">&lt;head&gt;</code> in vanjo  napišemo <code class="code-text">&lt;title></code>. To je naslov, ki se pojavi v okviru okna in ni viden v dokumentu samem. <br>
+                        Napišemo, kakšen bo naslov in nato zapremo ukaza head in title z značkama <code class="code-text">&lt;/title></code> in <code class="code-text">&lt;/head></code>.</li>
+                      <li>Potem uporabimo značko <code class="code-text">&lt;body></code>, v kateri bo vsebina predstavitvene strani. Zaključimo jo z značko <code class="code-text">&lt;/body></code>.</li>
+                      <li>Na koncu zaključimo dokument z značko <code class="code-text">&lt;/html></code>.</li>
+                    </ul>
+                      
+                    
+                    <br>
+                    <br>
+                    
+                      <h2 id="znacke">Značke</h2>
+                    <br>
+                    Tu je nekaj najbolj pomembnih značk:
+                    <br>
+                    <br>
+
+                      <h3 id="head">Head</h3>
+                    
+                      <p>
+                        Med znački &lt;head> in &lt;/head> napišemo informacije o dokumentu. Na sami strani se ne izpišejo. <br><br>
+                        Pri pisanju dokumenta v slovenščini si pomagamo z ukazom:
+                      </p>
+                      <code>
+                        &lt;meta charset="UTF-8"&gt;
+                      </code>
+                    <br>
+                    <br>
+
+                      <h3 id="naslovi">Naslovi</h3>
+                    
+                      Izbiramo lahko med 6 stopnjami naslovov (od h1 do h6). Naslov h1 je največji, naslov h6 pa najmanjši.  <code class="code-text">&lt;h1>Naslov 1&lt;/h1></code>
+                      Naslove lahko tudi umestimo na sredino z dodatkom: <code>&lt;h1 align=center>Naslov 1&lt;/h1></code>.
+
+
+                    <br>
+                    <br>
+                    
+                      <h3 id="p_in_br">Odstavki in nove vrstice</h3>
+
+                      Odstavke (Paragraphs) dosežemo z značko <code class="code-text">&lt;p></code>. Tudi odstavke lahko z dodatkom align poravnavamo na levo, desno ali na sredino (left, right, center). <br>
+                      <code>&lt;p align=left>ta odstavek bo levo poravnan&lt;/p></code>. <br>
+                        <br>
+                      Z značko <code class="code-text">&lt;br></code> ukažemo skok v novo vrstico.
+                      
+                    <br>
+                    <br>
+
+                      <h3 id="seznami">Seznami</h3>
+
+                      Poznamo oštevilčene (<i>numbered lists</i>) in neoštevilčene sezname (<i>unnumbered lists</i>)
+                      <br>
+                      Primer oštevilčenega seznama:
+                      <br>
+                      <pre class="example1">
+                        <code>
+  &lt;ol>	
+
+    &lt;li>točka 1&lt;/li>			
+    &lt;li>točka 2&lt;/li>			
+    &lt;li>točka 3&lt;/li>			
+
+  &lt;/ol>         
+                        </code>
+                      </pre>
+
+                      <br>
+                      <br>
+
+                      Rezultat:
+                      <pre>
+    1. točka 1
+    2. točka 2
+    3. točka 3
+                      </pre>
+                      <br>
+                      Vsako točko začnemo z značko <code class="code-text">&lt;li></code> in končamo z značko <code class="code-text">&gt;/li></code>.
+                      <br>
+                      Če želimo namesto oštevilčenih seznamov uporabljati neoštevilčene, namesto značke <code class="code-text">&lt;ol></code> uporabimo značko <code class="code-text">&lt;ul></code>. 
+
+                      <br>
+                      <br>
+                      <h3 id="tabele">Tabele</h3>
+                      Tabele so zelo močno orodje v HTML. Ker jezik sam ne omogoča natančnega oblikovanja strani, za ta namen uporabljamo tabele. Pri oblikovanju tabel se uporabljajo naslednje značke:
+                      
+                      <br>
+                      <br>
+                      <br>
+
+                      <table width="60%">
+
+                        <tr>
+                          <th>Ime značke</th>
+                          <th>Pomen</th>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;table></code> in <code class="code-text">&lt;/table> </code> </td>
+                          <td>Začetek in konec tabele</td>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;th></code> in <code class="code-text">&lt;/th> </code> </td>
+                          <td>Stolpci v prvi vrstici tabele (debeli tisk, na sredini)</td>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;tr></code> in <code class="code-text">&lt;/tr> </code> </td>
+                          <td>Nova vrstica v tabeli</td>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;td></code> in <code class="code-text">&lt;/td> </code> </td>
+                          <td>Nova stolpec v trenutni vrstici</td>
+                        </tr>
+                      </table>
+                
+                      <br>
+                      <br>
+                     
+                      <h3 id="ostal_znacke">Ostale značke</h3>
+
+                      <table width="70%">
+
+                        <tr>
+                          <th>Značka</th>
+                          <th>Pomen</th>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;B></code> in <code class="code-text">&lt;/B> </code> </td>
+                          <td>Odebeljen izpis (<b>Bold</b>)</td>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;I></code> in <code class="code-text">&lt;/I> </code> </td>
+                          <td>Ležeči izpis (<i>Italic</i>)</td>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;U></code> in <code class="code-text">&lt;/U> </code> </td>
+                          <td>Podčrtan izpis (<u>Underlined</u>)</td>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;a></code> in <code class="code-text">&lt;/a> </code> </td>
+                          <td>Skok na drug dokument (link)</td>
+                        </tr>
+
+                        <tr>
+                          <td> <code class="code-text"> &lt;img></code> in <code class="code-text">&lt;/img> </code> </td>
+                          <td>Dodajanje slik</td>
+                        </tr>
+                      </table>
+                      <br><br><br><br><br><br><br>
+
+                    <div class="page-bottom">
+                            <a href="zgo_HTML.html">&#9669; Nazaj</a>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="page-footer">
+                 Klemen Skok, R 1. A
+                 <br><br>
+                 Šolsko leto 2021/22
+              </div>
+
+
+    </body>
+
+</html>
+

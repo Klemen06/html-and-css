@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+      <title>
+          HTML in CSS
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
+    </head>
+
+    <body>
+
+      <div id="navbar">
+        <a class="active" href="index.html">DOMOV</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">HTML &#9662;
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="HTML_uvod.html">Kaj je HTML?</a>
+            <a href="Berners-lee.html">Tim Berners-Lee</a>
+            <a href="zgo_HTML.html">Zgodovina</a>
+            <a href="oblika_strani.html">Oblika strani</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">CSS &#9662;
+          </button>
+        <div class="dropdown-content">
+            <a href="CSS_uvod.html">Kaj je CSS?</a>
+            <a href="verzije_CSS.html">Verzije</a>
+            <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+            <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+            <a href="Primeri_CSS.html">Primeri</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+        </div>
+      </div>
+          <a class="nav-element" href="VIRI.html">
+            VIRI
+          </a>
+    </div>  
+              
+              <div class="page-background">
+                <div class="page-content">
+                    
+                    <h1 align=center>
+                        Urejevalniki
+                      </h1>
+                      
+                      <br>
+                      <br>
+                    
+                      <p>
+                        Tako HTML kot CSS lahko pišemo v več zaličnih urejevalnikih.
+                      </p>
+
+                      <p>
+                        Uporabimo lahko Beležnico, ki je že vnaprej naložena na računalnikih z operacijskim sistemom Windows. Ko napišemo dokument, <br>
+                        moramo paziti, da ga tudi shranimo pavilno - kot dokument HTML (s končnico .htm ali .html) oziroma dokument CSS (s končnico .css). <br>
+                         
+                      </p>
+
+                      <p>
+                        Da vidimo rezultat, moramo za odpiranje datoteke izbrati katerikoli brskalnik (npr. Google).
+                      </p>
+                    
+                    <br>
+                      
+                    <p>
+                      Na voljo imamo veliko različnih programov za pisanje tovrstne kode.
+                    </p>
+                    
+                    <br>
+                      <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Notepad++</li>
+                        <li>Sublime Text</li>
+                        <li>Adobe Dreamweaver</li>
+                        <li>Atom</li>
+                        <li>...</li>
+                      </ul>
+                    <br>
+
+
+                     
+                    
+                    <br><br><br>
+
+                    <figure>
+                      <img style="width:15%; margin-left:50px;" src="https://sparkcdneus2.azureedge.net/sparkimageassets/XP9KHM4BK9FZ7Q-63e59db4-cf83-46b7-9365-0c37221b94de">
+                      <figcaption style="margin-left:65px">Visual Studio Code</figcaption>
+                  </figure>
+                  
+                  <br><br><br><br><br><br><br><br>
+
+                   
+                 </div>
+              </div>
+
+              <div class="page-footer">
+                 Klemen Skok, R 1. A
+                 <br><br>
+                 Šolsko leto 2021/22
+              </div>
+
+
+    </body>
+
+</html>

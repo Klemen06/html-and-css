@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+      <title>
+          HTML in CSS
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style1.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
+    </head>
+
+    <body>
+
+      <div id="navbar">
+        <a class="active" href="index.html">DOMOV</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">HTML &#9662;
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="HTML_uvod.html">Kaj je HTML?</a>
+            <a href="Berners-lee.html">Tim Berners-Lee</a>
+            <a href="zgo_HTML.html">Zgodovina</a>
+            <a href="oblika_strani.html">Oblika strani</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">CSS &#9662;
+          </button>
+        <div class="dropdown-content">
+            <a href="CSS_uvod.html">Kaj je CSS?</a>
+            <a href="verzije_CSS.html">Verzije</a>
+            <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+            <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+            <a href="Primeri_CSS.html">Primeri</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+        </div>
+      </div>
+          <a class="nav-element" href="VIRI.html">
+            VIRI
+          </a>
+    </div>  
+              
+              <div class="page-background">
+                <div class="page-content">
+                    
+                    <h1 align=center>
+                        Kaj je CSS?
+                      </h1>
+
+                    <br>
+                    <br>
+
+                    <p>
+                      CSS je kratica za Cascading Style Sheets, kar v slovenščini pomeni kaskadne slogovne predloge. Je preprost slogovni jezik, <br>
+                       katerim lahko urejamo videz predstavitvene strani. Lahko ga uporabljamo za vsak HTML element. Izdelovalcem spletnih strani omogoča, <br>
+                       da posameznim elementom v dokumentu določijo videz, spletnemu brskalniku pa pove, kako naj prikaže  dokument HTML.
+                    </p>
+                    <p>
+                      Večina elementov v HTML je namenjena logičnemu oblikovanju. Tam sami določimo, kakšne vrste je posamezen element,  <br>
+                      potem pa jih brskalnik oblikuje sam.Ker videz dokumenta posledično pogosto ni takšen, kot bi si želeli, si pomagamo s CSS.
+                    </p>
+                    <p>
+                      Z uporabo CSS lahko elementom določimo veliko lastnosti, npr. pisava, barva pisave, robovi, ozadje, poravnava (levo, desno, na sredini)... <br>
+                      Zaradi preglednosti napisane kode nam CSS omogoča določanje oblikovnih lastnosti ločeno od vsebine HTML dokumenta. <br>
+                      Ta vrsta datoteke ima končnico <u>.css</u>.
+                    </p>
+                    
+                    <br><br><br>
+                    
+                    <figure>
+                      <img style="width:15%; padding-left:50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png">
+                      <figcaption style="padding-left:95px">CSS3 logo</figcaption>
+                    </figure>
+                    
+                    <br><br><br><br><br><br><br>
+
+                    
+
+                    <div class="page-bottom">
+                           <a style="float:right" href="verzije_CSS.html">Naprej &#9659;</a>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="page-footer">
+                 Klemen Skok, R 1. A
+                 <br><br>
+                 Šolsko leto 2021/22
+              </div>
+
+
+    </body>
+
+</html>
+

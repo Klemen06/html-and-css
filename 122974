@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        
+      <title>
+          HTML in CSS
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style1.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+          } else {
+            document.getElementById("navbar").style.top = "-60px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+        
+    </head>
+
+    <body>
+
+      <div id="navbar">
+        <a class="active" href="index.html">DOMOV</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">HTML &#9662;
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="HTML_uvod.html">Kaj je HTML?</a>
+            <a href="Berners-lee.html">Tim Berners-Lee</a>
+            <a href="zgo_HTML.html">Zgodovina</a>
+            <a href="oblika_strani.html">Oblika strani</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">CSS &#9662;
+          </button>
+        <div class="dropdown-content">
+            <a href="CSS_uvod.html">Kaj je CSS?</a>
+            <a href="verzije_CSS.html">Verzije</a>
+            <a href="CSS_v_HTML.html">Uporaba v HTML</a>
+            <a href="oblik_lastnosti_CSS.html">Oblikovne lastnosti</a>
+            <a href="Primeri_CSS.html">Primeri</a>
+            <a href="Urejevalniki.html">Urejevalniki</a>
+        </div>
+      </div>
+          <a class="nav-element" href="VIRI.html">
+            VIRI
+          </a>
+    </div>  
+              
+              <div class="page-background">
+                <div class="page-content">
+                    
+                    <h1 align=center>
+                        Uporaba CSS v HTML 
+                      </h1>
+
+                    <br>
+                    <br>
+
+                    <div class="box">
+
+
+
+                      </div>
+                      <div class="container">
+
+                        <br>
+                          <div style="text-align:center;"><b>Vsebina strani</b></div>
+                        <br>
+
+                        <ul>
+
+                          <li><a href="#vkljucitev_v_HTML">Vključitev v HTML</a></li>
+                          <li><a href="#zunanji_dokument">Opis sloga v zunanjem dokumentu</a></li>
+                          <li><a href="#sintaksa">Sintaksa</a></li>
+                          
+                          
+                        </ul>
+
+                        </div>
+
+                    <br>
+                    <br>
+                    
+                      <h2 id="vkljucitev_v_HTML">Vključitev v HTML</h2>
+
+                      CSS lahko v HTML kodo vključimo na tri različne načine:
+                      <br>
+                      <ol>
+
+                        <li>Kodo CSS lahko pripravimo v svoji datoteki (s končnico .css) in jo z elementom <code class="code-text">&lt;link&gt;</code> vključimo v glavo HTML dokumenta. <br>
+                          Na tak način lahko vključimo tudi več datotek CSS.</li>
+                     
+                        <br>
+                        <li>Celoten opis stilov napišemo v glavo dokumenta HTML. Uporabimo element <code class="code-text">&lt;style&gt;</code>.</li>
+                      
+                        <br>
+                        <li>Stile lahko opisujemo sproti (med besedilom). To naredimo tako, da elementom pripišemo lastnost <i>style</i>, ki jim določa obliko.</li>
+                      
+                      </ol>
+                      <br><br>
+                      <p> 
+                       Te tri načine lahko tudi kombiniramo. Ker pa bi bilo to nepregledno, večinoma uporabljamo samo prvi in drugi način, tretjega pa večinoma <br>
+                       uporabljamo samo v posebnih primerih.
+                      </p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    
+                    <h2 id="zunanji_dokument">Opis sloga v zunanjem dokumentu</h2>
+                        <br>
+                        <br>
+                      <p>
+                          V primeru, da opis oblike dokumenta pripravimo v posebni datoteki (s končnico .css), jo moramo povezati <br>
+                          s HTML dokumentom z uporabo značke <code class="code-text">&lt;link&gt;</code>:
+                      </p>
+                        <br>
+                      <code class="code-text">&lt;link rel="StyleSheet" type="text/css" href="ime_datoteke.css"/&gt;</code>
+                      
+                        <br>
+                        <br>
+                        <br>
+                      <p>Razlaga ukaza:</p>
+
+                        <br>
+
+                        <ul>
+                          <li><code class="code-text">rel="StyleSheet"</code> - določa odvisnost na slogovno predlogo</li>
+                            <br>
+                          <li><code class="code-text">type="text/css"</code> - pomeni, da je dokument besedilna datoteka, ki vsebuje CSS pravila.</li>
+                            <br>
+                          <li><code class="code-text">href="ime_datoteke.css"</code> - vsebuja naslov dokumenta, ki ga želimo povezati.</li>
+                        </ul>
+                      
+                      
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+
+                      <h2 id="sintaksa">CSS sintaksa</h2>
+                      
+                        <br>
+                        <br>
+
+                        <figure>
+                            <img style="height:250px; margin-left:50px" src="https://nsa-splet.si/_slike/css/css-sintaksa.png">
+                        </figure>
+
+                        <br>
+                        <br>
+                        <p>
+                          Zgornja slika prikazuje zgradbo ukaza za izgled nekega elementa v HTML.
+                        </p>
+                        <br>
+                          <ul>
+                            <li><u><b>Selektor</b></u> je lahko katerakoli oznaka v HTML, ki ji želimo določiti videz.</li>
+                              <br>
+                            <li><u><b>Lastnost</b></u> pove, kaj želimo tej znački določiti (npr. v zgornjem primeru barvo ozadja, barvo pisave, obliko pisave...)</li>
+                              <br>
+                            <li><u><b>Vrednost</b></u> pove, kako bo izgledal element. Lahko je to barva (npr. rdeča), vrsta pisave (npr. Arial), velikost pisave (številka, npr. 7), itd.</li>
+                          </ul>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                    <div class="page-bottom">
+                            <a href="verzije_CSS.html">&#9669; Nazaj</a>
+                            <a style="float:right" href="oblik_lastnosti_CSS.html">Naprej &#9659;</a>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="page-footer">
+                 Klemen Skok, R 1. A
+                 <br><br>
+                 Šolsko leto 2021/22
+              </div>
+
+
+    </body>
+
+</html>
