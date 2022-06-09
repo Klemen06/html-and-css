@@ -17,6 +17,7 @@ body{
     position: fixed;
     top: 0;
     transition: 0.5s;
+    user-select: none;
 
 }
 
@@ -203,4 +204,6 @@ td{
 .container a:hover{
     color: black;
 }
-
+Heading{
+    user-select: none;
+} 
